@@ -1,12 +1,18 @@
 import pg from "pg";
 const { Pool } = pg;
 
-const pool = new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "yugioh_db",
-  password: "",
-  port: 5432,
-});
+let pool = null;
 
-export default pool;
+export const getPool = () => {
+  if (!pool) {
+    pool = new Pool({
+      connectionString: process.env.DATABASE_URL,
+      ssl: process.env.NODE_ENV === "production"
+        ? { rejectUnauthorized: false }
+        : false,
+    });
+  }
+  return pool;
+};
+
+export default { getPool };
