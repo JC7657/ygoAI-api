@@ -1,0 +1,1186 @@
+{
+  "archetypes": {
+    "Dracotail": {
+      "name": "Dracotail",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:26:37.551Z"
+    },
+    "Yummy": {
+      "name": "Yummy",
+      "playing_style": "\"Yummy\" is a Synchro archetype whose Level 2 Synchro Monsters can be Synchro Summoned using Link-1 Link Monsters as material by treating them as Level 1 Tuners. Their archetypal Link Monster, \"Yummy★Snatchy\", can use the Synchro Monsters as interaction by triggering Synchro Summons on the opponent's turn, allowing itself to be used as Synchro Material. The Synchro Monsters can then be returned to the Extra Deck when the opponent activates a card or effect to Special Summon \"Yummy\" monsters from ",
+      "recommended_cards": {
+        "main": [
+          "Bunilla"
+        ],
+        "extra": [
+          "Cooky★Yummy Way",
+          "Cupsy★Yummy Way",
+          "Lollipo★Yummy Way",
+          "Ancient Fairy Dragon",
+          "Crystron Quandax",
+          "Cupid Pitch",
+          "Formula Synchron",
+          "Goyo Defender",
+          "Herald of the Arc Light",
+          "Mannadium Trisukta",
+          "Martial Metal Marcher",
+          "Merry Melffys",
+          "Shamisen Samsara Sorrowcat",
+          "T.G. Hyper Librarian",
+          "Tatsunoko"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:26:39.295Z"
+    },
+    "Radiant Typhoon": {
+      "name": "Radiant Typhoon",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:26:41.023Z"
+    },
+    "Vanquish Soul": {
+      "name": "Vanquish Soul",
+      "playing_style": "\"Vanquish Soul\" revolves around the shared ability to, as a Quick Effect, reveal monsters from the hand in order to activate a variety of effects depending on the revealed monster's Attribute. The deck generally plays a control/midrange strategy, aiming to generate card advantage on both players' turns to outgrind the opponent.",
+      "recommended_cards": {
+        "main": [
+          "Vanquish Soul Caesar Valius",
+          "Vanquish Soul Dr. Mad Love",
+          "Vanquish Soul Heavy Borger",
+          "Vanquish Soul Hollie Sue",
+          "Vanquish Soul Jiaolong",
+          "Vanquish Soul Pantera",
+          "Vanquish Soul Pluton HG",
+          "Vanquish Soul Razen",
+          "EARTH",
+          "FIRE",
+          "DARK",
+          "Ash Blossom &amp; Joyous Spring",
+          "Bystial",
+          "Diabrocken of the Ghost Light",
+          "Dimension Shifter",
+          "Gagaga Girl - Cell Phone Subtraction",
+          "Ghost Belle &amp; Haunted Mansion",
+          "K9-17 Izuna",
+          "K9-ØØ Lupis"
+        ],
+        "extra": [
+          "Vanquish Soul Rocks",
+          "Battlin&#39; Boxer King Dempsey",
+          "Number 105: Battlin&#39; Boxer Star Cestus",
+          "Number C105: Battlin&#39; Boxer Comet Cestus",
+          "Number 106: Giant Hand",
+          "Number C106: Giant Red Hand",
+          "Number 107: Galaxy-Eyes Tachyon Dragon"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:26:42.769Z"
+    },
+    "Maliss": {
+      "name": "Maliss",
+      "playing_style": "\"Maliss\" revolves around using self-banishing in order to swarm the field with materials for Link Summons; most of its monsters can Special Summon themselves upon being banished. In conjunction with the Deck's Link-only Extra Deck lock, a \"Maliss\" Deck is typically geared towards a Link Monster beatdown strategy.",
+      "recommended_cards": {
+        "main": [
+          "Maliss P Chessy Cat",
+          "Maliss P Dormouse",
+          "Maliss P March Hare",
+          "Maliss P White Rabbit",
+          "Aloof Lupine",
+          "Dimension Shifter",
+          "Dotscaper",
+          "Dual Assembwurm",
+          "EM:P Meowmine",
+          "Fiend Reflection of the Millennium",
+          "Formud Skipper",
+          "Full Active Duplex",
+          "Genro Ryu-Ge Hakva",
+          "Gold Pride - Nytro Head",
+          "Grid Sweeper",
+          "Labrynth",
+          "Arias the Labrynth Butler",
+          "Lady Labrynth of the Silver Castle"
+        ],
+        "extra": [
+          "Cyberse Desavewurm"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:26:44.502Z"
+    },
+    "Branded": {
+      "name": "Branded",
+      "playing_style": "\"Branded\" is an archetype of primarily Spell and Trap Cards that support various cards related to \"Fallen of Albaz\" and Fusion Summoning. It also directly supports the \"Despia\" and \"Bystial\" archetypes:",
+      "recommended_cards": {
+        "main": [
+          "Fallen of Albaz",
+          "Albion the Shrouded Dragon",
+          "Aluber the Jester of Despia",
+          "Despian Tragedy",
+          "Tri-Brigade Mercourier",
+          "Springans Kitt",
+          "Ad Libitum of Despia",
+          "Dramaturge of Despia",
+          "Astellar of the White Forest",
+          "Red-Eyes Black Fullmetal Dragon",
+          "Bystial",
+          "Dark End Evaporation Dragon",
+          "Light End Sublimation Dragon",
+          "Dragon Tale Fymena"
+        ],
+        "extra": [
+          "Albion the Branded Dragon",
+          "Brigrand the Glory Dragon",
+          "Sprind the Irondash Dragon",
+          "Titaniklad the Ash Dragon",
+          "Masquerade the Blazing Dragon",
+          "Mirrorjade the Iceblade Dragon",
+          "Lubellion the Searing Dragon",
+          "Granguignol the Dusk Dragon",
+          "Rindbrumm the Striking Dragon",
+          "Albion the Sanctifire Dragon",
+          "Despian Quaeritis",
+          "Borreload Furious Dragon",
+          "Guardian Chimera",
+          "Khaos Starsource Dragon",
+          "Light and Darkness Dragonlord"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:26:46.270Z"
+    },
+    "Mitsurugi": {
+      "name": "Mitsurugi",
+      "playing_style": "The \"Mitsurugi\" archetype is a Ritual archetype that revolves around its main Level 8 Ritual Monsters. Each monster in the archetype has an effect that activates in the Graveyard when they are Tributed, recovering card advantage and board presence when they are used as material for Ritual Summons or when they are Tributed by their own effects. The goal of the archetype is to end on \"Ame no Murakumo no Mitsurugi\" and \"Futsu no Mitama no Mitsurugi\", who together make the archetype difficult to bre",
+      "recommended_cards": {
+        "main": [
+          "Mitsurugi no Mikoto, Kusanagi",
+          "Mitsurugi no Mikoto, Aramasa",
+          "Mitsurugi no Mikoto, Saji",
+          "Mitsurugi no Miko, Wousu",
+          "Kagetokage",
+          "Lamia",
+          "Liberator Eto",
+          "Manju of the Ten Thousand Hands",
+          "Night Sword Serpent",
+          "Ogdoadic",
+          "Ragnaraika Armored Lizard",
+          "Ritual Raven",
+          "Skull Archfiend of Chaos",
+          "Wicked Serpent Night Dragon",
+          "Therion &quot;Empress&quot; Alasia",
+          "Urubonus, the Avatar of Malice",
+          "Vanguard of the Underground Emperor",
+          "Nibiru, the Primal Being"
+        ],
+        "extra": [
+          "Reptilianne Melusine"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:26:48.048Z"
+    },
+    "Dragonmaid": {
+      "name": "Dragonmaid",
+      "playing_style": "The \"Dragonmaid\" archetype revolves around swarming its low-Level members and using their on-summon effects to amass resources during either the Standby or a Main Phase, switching them out for their dragon forms during the Battle Phase, and then switching back into the humanoid forms afterwards.",
+      "recommended_cards": {
+        "main": [
+          "Dragonmaid Ernus",
+          "Dragonmaid Tinkhec",
+          "Dragonmaid Lorpar",
+          "Dragonmaid Nudyarl",
+          "Dragonmaid Cehrmba",
+          "Nurse Dragonmaid",
+          "Kitchen Dragonmaid",
+          "Parlor Dragonmaid",
+          "Laundry Dragonmaid",
+          "Chamber Dragonmaid",
+          "Dark End Evaporation Dragon",
+          "Light End Sublimation Dragon",
+          "Fantastical Dragon Phantazmay",
+          "Dracotail Faimena",
+          "Dragonic Warrior",
+          "Red-Eyes Black Fullmetal Dragon",
+          "Red-Eyes Darkness Metal Dragon",
+          "Red-Eyes Metal Claws Dragon",
+          "Tempest, Dragon Ruler of Storms",
+          "Tidal, Dragon Ruler of Waterfalls"
+        ],
+        "extra": [
+          "House Dragonmaid",
+          "Dragonmaid Sheou",
+          "Lady&#39;s Dragonmaid",
+          "Borreload Furious Dragon",
+          "Khaos Starsource Dragon",
+          "Light and Darkness Dragonlord",
+          "Filia Regis",
+          "Trishula, the Dragon of Icy Imprisonment",
+          "Darkfire Dragon"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:50:34.619Z"
+    },
+    "War Rock": {
+      "name": "War Rock",
+      "playing_style": "The \"War Rock\" archetype focuses on an aggressive playstyle centered around spamming the boards with monsters, battling opponent's monsters, and giving boosts of ATK to its members until the end of the opponent's turn after successfully activating their effects, allowing them to build up surprisingly high ATK in a short space of time. This is facilitated by the Field Spell, \"War Rock Mountain\", which can search a \"War Rock\" monster on activation and Special Summon a \"War Rock\" monster from the h",
+      "recommended_cards": {
+        "main": [
+          "War Rock Bashileos",
+          "War Rock Fortia",
+          "War Rock Gactos",
+          "War Rock Mammud",
+          "War Rock Meteoragon",
+          "War Rock Orpis",
+          "War Rock Skyler",
+          "War Rock Wento",
+          "Argostars - Glorious Adra",
+          "Battleguard Cadet",
+          "E Stranger Big Bang",
+          "Fire Flint Lady",
+          "Gaia the Fierce Knight Origin",
+          "Heroic Challenger - Assault Halberd",
+          "Heroic Challenger - Knuckle Sword",
+          "Heroic Challenger - Morning Star",
+          "Heroic Challenger - Thousand Blades",
+          "Kaiki the Unity Star",
+          "Kaiza the Hidden Star",
+          "Todoroki the Earthbolt Star"
+        ],
+        "extra": [
+          "Chevreuil, Hunting Scout of the Deep Forest",
+          "Faisan, Hunting Scout of the Deep Forest",
+          "Favorite HERO Flame Wingman",
+          "Favorite HERO Shining Flare Wingman"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:52:48.942Z"
+    },
+    "Magikey": {
+      "name": "Magikey",
+      "playing_style": "\"Magikey\" focuses on supporting Normal Monsters of various Attributes (mainly \"Clavkiys, the Magikey Skyblaster\") and using them to Summon various Extra Deck monsters and Ritual Monsters, which then recycle \"Clavkiys\". They gain extra effects by matching the Attributes of the Normal Monsters in the GY with those of the opponent's monsters.",
+      "recommended_cards": {
+        "main": [
+          "Clavkiys, the Magikey Skyblaster",
+          "Alexandrite Dragon",
+          "Mekk-Knight Avram",
+          "Gene-Warped Warwolf",
+          "Leotron",
+          "Shiny Black &quot;C&quot; Squadder",
+          "Zombino",
+          "Jongleur-Ghoul Illusionist",
+          "Mystery Shell Dragon",
+          "Megalosmasher X",
+          "Phantom Gryphon",
+          "Gunkan Suship Shari",
+          "Dipity",
+          "Fiendsmith"
+        ],
+        "extra": [
+          "Magikey Beast - Ansyalabolas",
+          "Magikey Dragon - Andrabime",
+          "First of the Dragonlords",
+          "First of the Dragons",
+          "Primite Dragon Nether Berzelius"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:54:10.330Z"
+    },
+    "Batteryman": {
+      "name": "Batteryman",
+      "playing_style": "\"Batteryman\" Decks are generally played as OTK Decks, focusing on breaking the opponent's board and dealing enough damage to win. Other variants, such as Batteryman \"Hunder\", also exist, though.",
+      "recommended_cards": {
+        "main": [
+          "Batteryman 9-Volt",
+          "Batteryman AA",
+          "Batteryman AAA",
+          "Batteryman Charger",
+          "Batteryman D",
+          "Batteryman Fuel Cell",
+          "Batteryman Industrial Strength",
+          "Batteryman Solar",
+          "Super-Electromagnetic Voltech Dragon",
+          "Brohunder",
+          "Diana the Light Spirit",
+          "Honest",
+          "Mahunder",
+          "Nemeses Corridor",
+          "Pahunder",
+          "Sishunder",
+          "The Ascended of Thunder",
+          "Thunder Dragonlord",
+          "Thunder Dragonmatrix",
+          "Thunder Sea Horse"
+        ],
+        "extra": [
+          "Chaos Ruler, the Chaotic Magical Dragon"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T19:58:18.880Z"
+    },
+    "Elemental HERO": {
+      "name": "Elemental HERO",
+      "playing_style": "The \"Elemental HERO\" archetype has many Main Deck monsters and Extra Deck Fusion Monsters, each with their own varied effects. Historically, the archetype can be built to focus on their Main Deck monsters or their Fusion Monsters; currently, the Main Deck \"Elemental HERO\" monsters are too weak in contrast to the general power level of the game, and later \"Elemental HERO\" support leaned into their Fusion Summoning playstyle more favorably.",
+      "recommended_cards": {
+        "main": [
+          "Elemental HERO Avian",
+          "Elemental HERO Burstinatrix",
+          "Elemental HERO Clayman",
+          "Elemental HERO Neos",
+          "Elemental HERO Sparkman"
+        ],
+        "extra": [
+          "Elemental HERO Absolute Zero",
+          "Elemental HERO Brave Neos",
+          "Elemental HERO Core",
+          "Elemental HERO Darkbright",
+          "Elemental HERO Electrum",
+          "Elemental HERO Escuridao",
+          "Elemental HERO Flame Wingman",
+          "Elemental HERO Shining Flare Wingman"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T20:27:15.773Z"
+    },
+    "HERO": {
+      "name": "HERO",
+      "playing_style": "Due to the \"HERO\" archetype being generally divided across a few sub-archetypes, the overall playstyle of the \"HERO\" archetype is objectively varied although common traits between the sub-archetypes show that the \"HERO\" archetype is predominantly a Fusion-based playstyle; they focus on swarming the field by Summoning \"HERO\" monsters, as well as searching \"HERO\" monsters and/or their \"Fusion\"/\"Polymerization\" Spell Cards needed to Special Summon their Fusion Monsters (usually by a Fusion Summon).",
+      "recommended_cards": {
+        "main": [
+          "Elemental HERO Neos"
+        ],
+        "extra": [
+          "Contrast HERO Chaos",
+          "Elemental HERO Absolute Zero",
+          "Elemental HERO Escuridao",
+          "Elemental HERO Flame Wingman - Infernal Rage",
+          "Elemental HERO Shining Neos Wingman"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T20:27:21.028Z"
+    },
+    "Magician": {
+      "name": "Magician",
+      "playing_style": "As a Pendulum archetype, the \"Magician\" Pendulum Monsters aim to search their various members to set up Pendulum Summons. The most notable of these is \"Pendulum Call\" which also protects \"Magician\" cards in the Pendulum Zones from being destroyed. Alternatively, \"Wisdom-Eye Magician\" can be used instead \"Oafdragon Magician\" is used as a Pendulum Scale to recovers \"Wisdom-Eye\" and be Special Summoned to recover a target for the \"Discard 1 Pendulum Monster\" effects mentioned above. Because of the ",
+      "recommended_cards": {
+        "main": [
+          "Rescue Rabbit"
+        ],
+        "extra": [
+          "Odd-Eyes Arcray Dragon",
+          "Odd-Eyes Vortex Dragon",
+          "Starving Venom Fusion Dragon",
+          "Supreme King Dragon Starving Venom",
+          "Supreme King Z-ARC",
+          "Dark Magician of Destruction",
+          "Red-Eyes Dark Dragoon"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T20:28:07.876Z"
+    },
+    "Fiendsmith": {
+      "name": "Fiendsmith",
+      "playing_style": "The archetype is largely focused around its key Main Deck monster, \"Fiendsmith Engraver\", and its multiple Fusion Monster upgrades. Common themes of the Deck include recursion (shuffling from GY into the Deck/summoning from the GY) and Link Monsters equipping themselves to LIGHT Fiends whilst providing additional effects.",
+      "recommended_cards": {
+        "main": [
+          "White Duston",
+          "Dipity"
+        ],
+        "extra": [
+          "Fiendsmith&#39;s Lacrima",
+          "Fiendsmith&#39;s Desirae",
+          "Fiendsmith&#39;s Rextremende",
+          "Aerial Eater",
+          "Evil HERO Malicious Bane",
+          "Luce the Dusk&#39;s Dark",
+          "Necroquip Princess",
+          "The Duke of Demise",
+          "Snake-Eyes Doomed Dragon",
+          "Soul Hunter"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T21:03:18.142Z"
+    },
+    "Vision HERO": {
+      "name": "Vision HERO",
+      "playing_style": "The archetype's playstyle involves using the Level 3 \"Vision HERO\" monsters' effects to be placed in the Spell &amp; Trap Zone as Continuous Traps (a.k.a. \"vision\" effects) to swarm the field and gain advantage, and summon the archetype's boss monsters via Tribute Summon or Fusion Summon.\nThe Level 3 \"Vision HERO\" monsters share the following three only once per turn effects:",
+      "recommended_cards": {
+        "main": [
+          "Vision HERO Faris",
+          "Vision HERO Gravito",
+          "Vision HERO Increase",
+          "Vision HERO Minimum Ray",
+          "Vision HERO Multiply Guy",
+          "Vision HERO Poisoner",
+          "Vision HERO Vyon",
+          "Vision HERO Witch Raider",
+          "Elemental HERO Shadow Mist",
+          "Armageddon Knight",
+          "Dark Grepher",
+          "Blackwing - Zephyros the Elite",
+          "Eka the Flame Buddy",
+          "Performage Trick Clown",
+          "The Phantom Knights of Ancient Cloak",
+          "The Phantom Knights of Silent Boots"
+        ],
+        "extra": [
+          "Vision HERO Adoration",
+          "Vision HERO Trinity",
+          "Masked HERO Dark Law"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-17T21:21:13.157Z"
+    },
+    "Swordsoul": {
+      "name": "Swordsoul",
+      "playing_style": "The \"Swordsoul\" archetype is focused on Synchro Summoning. Instead of having archetypal Tuner monsters, \"Swordsoul\" cards instead have effects that Special Summon a Level 4 \"Swordsoul Token\" Tuner monster, which greatly increases the Deck's consistency compared to other Synchro Decks as there is no longer a need to search for Tuners. All the effects that Special Summon the \"Swordsoul Token\" apply the restriction that the player cannot Special Summon monsters from the Extra Deck except Synchro Mo",
+      "recommended_cards": {
+        "main": [
+          "Swordsoul Auspice Chunjun",
+          "Swordsoul Strategist Longyuan",
+          "Swordsoul of Mo Ye",
+          "Swordsoul of Taia",
+          "The Abyss Dragon Swordsoul",
+          "Fallen of the White Dragon",
+          "The Iris Swordsoul",
+          "Archnemeses Protos",
+          "Astellar of the White Forest",
+          "Genro Ryu-Ge Hakva",
+          "Giant Pairfish",
+          "Minimalian",
+          "Nemeses Corridor",
+          "Nidhogg, Generaider Boss of Ice",
+          "Tenyi Spirit - Ashuna",
+          "Tenyi Spirit - Shthana",
+          "Tenyi Spirit - Vishuda"
+        ],
+        "extra": [
+          "Thunder Dragon Colossus"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T03:17:25.410Z"
+    },
+    "Salamangreat": {
+      "name": "Salamangreat",
+      "playing_style": "The \"Salamangreat\" archetype focuses around swarming the field with monsters to set up for Link Summons, and setting up their Graveyard with a large amount of easily recoverable resources for an OTK push on later turns. The Deck's Link Monsters have effects that they can only use when Link Summoned using a monster with the same name as Link Material (known as a Reincarnation Link Summon in the anime); the effect of the Field Spell \"Salamangreat Sanctuary\" allows \"Salamangreat\" Link Monsters to b",
+      "recommended_cards": {
+        "main": [
+          "Salamangreat of Fire",
+          "Salamangreat Falco",
+          "Salamangreat Fowl",
+          "Salamangreat Foxy",
+          "Salamangreat Gazelle",
+          "Salamangreat Jack Jaguar",
+          "Salamangreat Meer",
+          "Salamangreat Spinny",
+          "Code of Soul",
+          "Barrier Statue of the Inferno",
+          "Diabrocken of the Ghost Light",
+          "Division",
+          "Flame Bufferlo",
+          "Hiita the Fire Channeler",
+          "Lady Debug",
+          "Parallel eXceed",
+          "Template Skipper"
+        ],
+        "extra": [
+          "Salamangreat Violet Chimera",
+          "Diplexer Chimera",
+          "Earth Golem @Ignister"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T03:32:02.175Z"
+    },
+    "The": {
+      "name": "The",
+      "playing_style": "The Series generally supports the Dragon Type, with a large focus on using Normal Monsters, recycling and reviving them at huge frequency to power them up or use them as Fusion Material. \"The Wyvern\" can specifically support many Dragon Type-based Rush Duel themes by retrieving crucial Normal Monsters, such as \"The Dragon\" and the materials of \"Full Moon Dragon Umbralancer F\" for Fusion Dragon Decks, or \"Sportsdragon Keeper\" for the Sportsdragon series, while The Series' boss Fusion Monster \"The",
+      "recommended_cards": {
+        "main": [
+          "The Dragias",
+          "The Dragon",
+          "Chill Dragon",
+          "Gravebronze Dragon"
+        ],
+        "extra": [
+          "The Dragiastar",
+          "The Perfect Dragiastar",
+          "The Trinity Dragiastar",
+          "Double Ray Dragons",
+          "Five-Headed Dragon (Rush Duel)",
+          "Hazy Strike Dragon Miragiastar F",
+          "Hyperstrike Dragon Dragiastar F",
+          "Hyperstrike Dragon Dragiastar IF",
+          "Solid Strike Dragon Metagiastar F",
+          "Tribemirror Dragon"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T03:48:15.088Z"
+    },
+    "Tearlaments": {
+      "name": "Tearlaments",
+      "playing_style": "The \"Tearlaments\" archetype is centered on milling cards from the player's Deck, in order to perform Fusion Summons with the Trigger Effect activated when a Main Deck \"Tearlaments\" monster is sent to the GY. The Deck has a notable secondary focus on Fusion Summoning during the opponent's turn to trigger additional beneficial Trigger Effects. As an archetype in the lore of \"Visas Starfrost\", certain \"Tearlaments\" cards also interact with \"Visas Starfrost\".",
+      "recommended_cards": {
+        "main": [
+          "Tearlaments Merrli",
+          "Tearlaments Havnis",
+          "Tearlaments Scheiren",
+          "Tearlaments Reinoheart",
+          "Tearlaments Kashtira",
+          "Agido the Ancient Sentinel",
+          "Kelbek the Ancient Vanguard",
+          "Keldo the Sacred Protector",
+          "Mudora the Sword Oracle",
+          "Crystal Beast Emerald Tortoise",
+          "Darkuriboh",
+          "Dragon Tale Fymena",
+          "Fallen of Albaz",
+          "Fairy Tail - Snow",
+          "King of the Swamp",
+          "Performage Trick Clown",
+          "Supreme Sea Mare",
+          "Fiendsmith Engraver",
+          "Gem-Knight Nepyrim",
+          "Gem-Knight Iolite"
+        ],
+        "extra": [
+          "Tearlaments Kaleido-Heart",
+          "Tearlaments Kitkallos",
+          "Tearlaments Rulkallos",
+          "Gem-Knight Amethyst",
+          "Vicious Astraloud",
+          "Dark Magician of Destruction",
+          "Red-Eyes Dark Dragoon"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T03:59:27.626Z"
+    }
+  },
+  "cards": {
+    "Ash Blossom & Joyous Spring": {
+      "name": "Ash Blossom & Joyous Spring",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:26:49.788Z"
+    },
+    "S:P Little Knight": {
+      "name": "S:P Little Knight",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:26:51.543Z"
+    },
+    "Mulcharmy Fuwalos": {
+      "name": "Mulcharmy Fuwalos",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:26:53.273Z"
+    },
+    "Called by the Grave": {
+      "name": "Called by the Grave",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:26:55.050Z"
+    },
+    "Infinite Impermanence": {
+      "name": "Infinite Impermanence",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:26:56.789Z"
+    },
+    "Super Starslayer TY-PHON - Sky Crisis": {
+      "name": "Super Starslayer TY-PHON - Sky Crisis",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:26:58.521Z"
+    },
+    "Forbidden Droplet": {
+      "name": "Forbidden Droplet",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:00.269Z"
+    },
+    "Ghost Belle & Haunted Mansion": {
+      "name": "Ghost Belle & Haunted Mansion",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:02.019Z"
+    },
+    "Triple Tactics Talent": {
+      "name": "Triple Tactics Talent",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:03.750Z"
+    },
+    "Droll & Lock Bird": {
+      "name": "Droll & Lock Bird",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:05.499Z"
+    },
+    "Nibiru, the Primal Being": {
+      "name": "Nibiru, the Primal Being",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:07.233Z"
+    },
+    "I:P Masquerena": {
+      "name": "I:P Masquerena",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:08.964Z"
+    },
+    "Mulcharmy Purulia": {
+      "name": "Mulcharmy Purulia",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:10.697Z"
+    },
+    "Effect Veiler": {
+      "name": "Effect Veiler",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:12.438Z"
+    },
+    "Pot of Prosperity": {
+      "name": "Pot of Prosperity",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:14.164Z"
+    },
+    "Divine Arsenal AA-ZEUS - Sky Thunder": {
+      "name": "Divine Arsenal AA-ZEUS - Sky Thunder",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:16.159Z"
+    },
+    "Bystial Magnamhut": {
+      "name": "Bystial Magnamhut",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:17.892Z"
+    },
+    "Salamangreat Almiraj": {
+      "name": "Salamangreat Almiraj",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:19.619Z"
+    },
+    "Dimension Shifter": {
+      "name": "Dimension Shifter",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:21.361Z"
+    },
+    "Dominus Impulse": {
+      "name": "Dominus Impulse",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:23.081Z"
+    },
+    "Accesscode Talker": {
+      "name": "Accesscode Talker",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:24.813Z"
+    },
+    "Number 41: Bagooska the Terribly Tired Tapir": {
+      "name": "Number 41: Bagooska the Terribly Tired Tapir",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:27:26.535Z"
+    },
+    "Black Luster Soldier": {
+      "name": "Black Luster Soldier",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:35:29.086Z"
+    },
+    "Main Deck": {
+      "name": "Main Deck",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:36:15.405Z"
+    },
+    "Deck": {
+      "name": "Deck",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:36:17.213Z"
+    },
+    "Extra Deck": {
+      "name": "Extra Deck",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:36:18.937Z"
+    },
+    "Typhoon": {
+      "name": "Typhoon",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:37:30.004Z"
+    },
+    "Link": {
+      "name": "Link",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:39:00.981Z"
+    },
+    "Rock": {
+      "name": "Rock",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:52:52.293Z"
+    },
+    "Archetype": {
+      "name": "Archetype",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T19:57:49.253Z"
+    },
+    "Yuki Judai": {
+      "name": "Yuki Judai",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T20:26:23.299Z"
+    },
+    "Judai": {
+      "name": "Judai",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T20:26:25.199Z"
+    },
+    "Dark Magician": {
+      "name": "Dark Magician",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T20:28:06.141Z"
+    },
+    "Ignister": {
+      "name": "Ignister",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T20:28:31.859Z"
+    },
+    "Fish": {
+      "name": "Fish",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:01:36.982Z"
+    },
+    "White Duston": {
+      "name": "White Duston",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:04:24.064Z"
+    },
+    "Duston": {
+      "name": "Duston",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:04:25.802Z"
+    },
+    "Dipity": {
+      "name": "Dipity",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:04:30.736Z"
+    },
+    "Fiendsmith's Requiem": {
+      "name": "Fiendsmith's Requiem",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:08:03.285Z"
+    },
+    "Fiendsmith Engraver": {
+      "name": "Fiendsmith Engraver",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:08:11.727Z"
+    },
+    "Boss": {
+      "name": "Boss",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:15:28.096Z"
+    },
+    "Monsters": {
+      "name": "Monsters",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:15:29.834Z"
+    },
+    "Strategy": {
+      "name": "Strategy",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:15:31.878Z"
+    },
+    "Dark": {
+      "name": "Dark",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-17T21:21:48.330Z"
+    },
+    "Tenpai": {
+      "name": "Tenpai",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T03:17:50.851Z"
+    },
+    "K9": {
+      "name": "K9",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T03:47:54.382Z"
+    }
+  },
+  "updatedAt": "2026-03-18T03:59:27.626Z"
+}

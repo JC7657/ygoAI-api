@@ -175,8 +175,19 @@ router.get("/", async (req, res) => {
     const { conditions, params } = buildWhereClause(filters, searchType);
     const whereClause = conditions.length > 0 ? `WHERE ${conditions.join(' AND ')}` : '';
     
+    let orderBy = 'ORDER BY name';
+    if (filters.name) {
+      const nameParam = filters.name;
+      orderBy = `ORDER BY 
+        CASE WHEN name ILIKE $${params.length + 1} THEN 0 
+             WHEN name ILIKE $${params.length + 2} THEN 1 
+             ELSE 2 
+        END, name`;
+      params.push(nameParam, `${nameParam}%`);
+    }
+    
     const countQuery = `SELECT COUNT(*) FROM cards ${whereClause}`;
-    const dataQuery = `SELECT * FROM cards ${whereClause} ORDER BY name LIMIT $${params.length + 1} OFFSET $${params.length + 2}`;
+    const dataQuery = `SELECT * FROM cards ${whereClause} ${orderBy} LIMIT $${params.length + 1} OFFSET $${params.length + 2}`;
     
     const queryParams = [...params, limit, offset];
     
@@ -239,12 +250,20 @@ router.get("/search/name", async (req, res) => {
 
   try {
     const searchPattern = `%${name}%`;
+    const exactPattern = name;
+    const prefixPattern = `${name}%`;
     
     const [countResult, cardsResult] = await Promise.all([
       getDb().query("SELECT COUNT(*) FROM cards WHERE name ILIKE $1", [searchPattern]),
       getDb().query(
-        "SELECT * FROM cards WHERE name ILIKE $1 ORDER BY id LIMIT $2 OFFSET $3",
-        [searchPattern, limit, offset]
+        `SELECT * FROM cards WHERE name ILIKE $1 
+         ORDER BY 
+           CASE WHEN name ILIKE $2 THEN 0 
+                WHEN name ILIKE $3 THEN 1 
+                ELSE 2 
+           END, name 
+         LIMIT $4 OFFSET $5`,
+        [searchPattern, exactPattern, prefixPattern, limit, offset]
       )
     ]);
 

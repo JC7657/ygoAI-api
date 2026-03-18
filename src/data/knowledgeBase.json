@@ -1,0 +1,157 @@
+{
+  "meta_decks": [
+    {
+      "name": "Dracotail",
+      "tier": 1,
+      "archetype": "Dracotail",
+      "key_cards": ["Dracotail", "Mystical Shine Ball"],
+      "playstyle": "combo"
+    },
+    {
+      "name": "Yummy",
+      "tier": 1,
+      "archetype": "Yummy",
+      "key_cards": ["Yummy, Dream Merchant", "Triple Tactics Talent"],
+      "playstyle": "combo"
+    },
+    {
+      "name": "Radiant Typhoon",
+      "tier": 1,
+      "archetype": "Radiant Typhoon",
+      "key_cards": ["Radiant Typhoon", "Madochouse"],
+      "playstyle": "control"
+    },
+    {
+      "name": "Vanquish Soul K9",
+      "tier": 1,
+      "archetype": "Vanquish Soul",
+      "key_cards": ["Vanquish Soul K9", "Vanquish Soul R痛"],
+      "playstyle": "aggro"
+    },
+    {
+      "name": "Maliss",
+      "tier": 1,
+      "archetype": "Maliss",
+      "key_cards": ["Maliss", "White Rabbit"],
+      "playstyle": "combo"
+    },
+    {
+      "name": "Branded",
+      "tier": 1,
+      "archetype": "Branded",
+      "key_cards": ["Branded in High Spirits", "Mirrorjade the Iceblade Dragon"],
+      "playstyle": "control"
+    },
+    {
+      "name": "Radiant Typhoon Yummy",
+      "tier": 1,
+      "archetype": "Radiant Typhoon/Yummy",
+      "key_cards": ["Radiant Typhoon", "Yummy, Dream Merchant"],
+      "playstyle": "combo/control"
+    },
+    {
+      "name": "Mitsurugi",
+      "tier": 1,
+      "archetype": "Mitsurugi",
+      "key_cards": ["Mitsurugi", "Kurepa"],
+      "playstyle": "combo"
+    }
+  ],
+  "staples": {
+    "common": [
+      "Ash Blossom & Joyous Spring",
+      "S:P Little Knight",
+      "Mulcharmy Fuwalos",
+      "Called by the Grave",
+      "Infinite Impermanence",
+      "Super Starslayer TY-PHON - Sky Crisis",
+      "Forbidden Droplet",
+      "Ghost Belle & Haunted Mansion",
+      "Triple Tactics Talent",
+      "Droll & Lock Bird",
+      "Nibiru, the Primal Being",
+      "I:P Masquerena",
+      "Mulcharmy Purulia",
+      "Effect Veiler",
+      "Pot of Prosperity"
+    ],
+    "rare": [
+      "Divine Arsenal AA-ZEUS - Sky Thunder",
+      "Bystial Magnamhut",
+      "Salamangreat Almiraj",
+      "Dimension Shifter",
+      "Dominus Impulse",
+      "Accesscode Talker",
+      "Number 41: Bagooska the Terribly Tired Tapir"
+    ]
+  },
+  "categories": {
+    "handtrap": "Cards that can be activated from your hand during the opponent's turn to disrupt their plays. Essential for going second.",
+    "engine": "Cards that enable consistent deck plays and combos. Usually search or special summon themselves easily.",
+    "floodgate": "Cards that restrict or limit the opponent's actions, often limiting what they can do on their turn.",
+    "board_breaker": "Cards that destroy or remove multiple cards from the opponent's field, typically used when going second.",
+    "staple": "Cards that are versatile and can fit into many different decks due to their generic utility."
+  },
+  "playstyles": {
+    "combo": "Decks that aim to set up a powerful board through extended chains of special summons and effects.",
+    "control": "Decks that aim to limit opponent's options and win through card advantage and resource management.",
+    "aggro": "Decks that aim to end the game quickly through aggressive attacks and pressure.",
+    "midrange": "Decks that balance between offense and defense, adapting to the opponent's strategy."
+  },
+  "mechanics": {
+    "normal_summon": "Each turn, you can Normal Summon or Set 1 monster from your hand to the field. This is your once-per-turn standard summon (unless otherwise stated on the card). Tribute Summons require Tributing monsters you control to summon higher-level monsters.",
+    "special_summon": "Special Summoning puts monsters on the field without using your Normal Summon. Many cards have effects that Special Summon themselves or other monsters. There is no limit to how many Special Summons you can do in a turn, except where a card specifically states otherwise.",
+    "fusion_summon": "Fusion Summoning requires Polymerization (or a card that substitutes for it) and uses monsters on your field (or hand/gy) as Fusion Material. You Fusion Summon a Fusion Monster from your Extra Deck by banishing the specified materials from the field, hand, or GY.",
+    "ritual_summon": "Ritual Summoning requires a Ritual Spell Card and tribute monsters whose total Levels equal or exceed the Level of the Ritual Monster you want to summon. You can also use monsters on the field as tribute for Ritual Summons.",
+    "synchro_summon": "Synchro Summoning requires exactly 1 Tuner monster + 1 or more non-Tuner monsters. The levels of all materials must exactly equal the Level of the Synchro Monster you want to summon from your Extra Deck. The Tuner's effect is applied to the Synchro Monster.",
+    "xyz_summon": "Xyz Summoning requires 2 or more monsters with the same Level. You Xyz Summon an Xyz Monster from your Extra Deck by stacking those monsters face-up on the field. The stacked monsters become the Xyz Material. Xyz Monsters have a Rank instead of a Level, and their Rank equals the Level of the monsters used.",
+    "pendulum_summon": "Pendulum Summoning is performed from your hand. If you have Pendulum Monsters in both Pendulum Zones, you can Pendulum Summon any number of monsters from your hand with Levels between the two Pendulum Scales. You can also Pendulum Summon from your Extra Deck to the Extra Monster Zone or a Monster Zone a Link Monster points to.",
+    "link_summon": "Link Summoning requires Link Materials - monsters used as material. The number of materials required equals the Link Rating of the Link Monster you want to summon. You can use Effect Monsters, tokens, and sometimes monsters from your hand as Link Materials. You cannot use monsters from the GY or that are banished.",
+    "link_materials": "Link Materials are monsters used to Link Summon. They are sent to the GY as Link Material. Link-1 requires 1 monster, Link-2 requires 2, Link-3 requires 3, etc. Some Link Monsters have specific material requirements.",
+    "battle_phase": "The Battle Phase is where you can attack with your monsters. It has 5 steps: Start Step, Draw Step, Standby Phase, Main Phase 1, Battle Step, Damage Step, Battle Phase End. You can attack with your monsters once each during the Battle Phase.",
+    "damage_step": "The Damage Step is when battle happens. Monsters with higher ATK destroy lower ATK monsters, equal ATK causes both to be destroyed, and higher DEF destroys the attacking monster if the opponent has no monsters. Some effects can be activated during the Damage Step.",
+    "chain": "When effects are activated, they form a Chain. Players can respond to each effect by activating other effects. Chains resolve backwards - the last effect activated resolves first. Each player can only activate 1 effect per Chain link.",
+    "mandatory_effect": "Mandatory effects MUST be activated when their condition is met. Optional effects can be activated at player's discretion. Mandatory effects cannot be chained to.",
+    "quick_effect": "Quick Effects can be activated during either player's turn, either on the field or in the GY (unless stated otherwise). They can respond to opponent's actions during their turn.",
+    "trigger_effect": "Trigger Effects activate when a specific condition is met (like when a monster is summoned or destroyed). They can be activated during either player's turn if the condition is met.",
+    "graveyard_effects": "Many monsters have effects that can be activated from the Graveyard. These usually require the monster to have been properly sent there first (not banished, not flipped face-down).",
+    "banish": "Banishing removes a card from play entirely. It does not go to the Graveyard. Some effects interact with banished cards, and some can banish cards from the field, hand, or GY.",
+    "attach": "Attaching is when a card becomes a Material for an Xyz or Link Monster. The attached cards are turned face-down and are not on the field or in the GY.",
+    "battle_position": "Monsters can be in Attack Position (ATK shown) or Defense Position (DEF shown). You can only change a monster's position once per turn during your Main Phase. Face-down Defense Position monsters cannot attack."
+  },
+  "effect_tier": {
+    "description": "When evaluating card effects in competitive Yu-Gi-Oh, effects can be ranked by their usefulness. Higher tier effects are more impactful in competitive play.",
+    "tiers": {
+      "S-Tier": "Game-changing effects that define formats. Examples: monster negation (Imperm, Veiler), board breaker (Evenly Matched), generic recursion (Monster Reborn), searchable handtraps (Ash Blossom).",
+      "A-Tier": "Strong generic effects used in almost every deck. Examples: non-targeting banish (Dark Ruler No More), protection (被打), generic link-2s (I:P, Salamangreat Almiraj), draw power (Pot of Prosperity).",
+      "B-Tier": "Solid effects that aredeck-specific or have conditions. Examples: archetype searchers, non-generic negations, bounce effects, floaters.",
+      "C-Tier": "Situational effects that rarely come up or require specific setups. Examples: battle phase effects, effects requiring specific attributes/types, 'win more' effects.",
+      "D-Tier": "Effects that rarely impact the game meaningfully. Examples: small stat boosts, battle-related effects without disruption, effects that only work when you're already winning."
+    },
+    "timing_tier": {
+      "quick_effect": "QUICK EFFECTS are among the most valuable in competitive play because they can be used during either player's turn, allowing disruption on the opponent's turn.",
+      "ignition_effect": "IGNITION EFFECTS can only be used during your own Main Phase. Generally less valuable than Quick Effects unless they are very powerful.",
+      "trigger_effect": "TRIGGER EFFECTS activate automatically when conditions are met. Valuable if the trigger is easy to meet and the effect is strong.",
+      "continuous_effect": "CONTINUOUS EFFECTS are always active. Valuable for passive benefits but don't provide interaction."
+    },
+    "common_misconceptions": [
+      "Effects that boost ATK/DEF are often 'win more' - they only matter when you're already ahead",
+      "Battle-related effects are rarely relevant in competitive play - the game is usually decided before battle phase",
+      "Graveyard effects are powerful but require the monster to be in the GY - fragile and opponent can interfere",
+      "Multi-effect monsters: the most important effect is usually the one that can interrupt the opponent",
+      "Float effects (when destroyed, do X) are weaker now because decks rarely attack into backrow"
+    ]
+  },
+  "monster_types": {
+    "gemini": "Gemini monsters are treated as Normal Monsters when first summoned. When you Normal Summon them a SECOND time (while they are already on the field), they gain their effects. They essentially need to be Normal Summoned twice to become Effect Monsters.",
+    "flip": "Flip monsters have effects that activate when they are flipped face-up. This happens in 3 ways: (1) manually flipping the card face-up, (2) when the monster attacks and is flipped face-up to damage calculation, (3) when a card effect flips the monster face-up. The effect triggers regardless of whether it's in Attack or Defense position.",
+    "toon": "Toon monsters are a specific archetype (not a general monster type). They cannot be Normal Summoned or Set. Toon monsters can attack directly if the opponent controls no Toon monsters. When Normal Summoned, they are treated as Normal Monsters. Some Toon monsters have additional effects when Special Summoned or when specific conditions are met.",
+    "spirit": "Spirit monsters return to the hand during the End Phase of the turn they are Special Summoned. Their effects usually trigger when they are returned to the hand.",
+    "union": "Union monsters can be equipped to other monsters as equipment. They provide buffs to the equipped monster and can be detached to Special Summon themselves.",
+    "tuner": "Tuner monsters are required for Synchro Summoning. They combine with non-Tuner monsters to Synchro Summon a Synchro Monster."
+  },
+  "archetypes": {
+    "swordsoul": "Swordsoul is a Wyrm-based control/OTK archetype. Key strategy: (1) Use Swordsoul monsters to generate advantage and summon big Synchro bosses like Chixiao, Baronne, and Taia. (2) The 'Swordsoul' cards focus on banished resource loop and protecting your board. (3) Main win condition is usually attacking with big Synchro monsters or using Vyond. NOT primarily an ATK-boosting deck."
+  },
+  "format": "TCG March 2026"
+}
