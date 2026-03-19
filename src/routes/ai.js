@@ -22,7 +22,7 @@ const GAME_CONCEPTS = [
   'deck', 'banlist', 'tcg', 'ocg', 'master duel', 'sidedeck', 'extra deck', 'main deck',
   'effect monster', 'normal monster', 'ritual monster', 'fusion monster', 'synchro monster',
   'xyz monster', 'link monster', 'pendulum monster', 'spell card', 'trap card',
-  'boss monster', 'boss monsters', 'win condition', 'endboard', 'board presence'
+  'boss monster', 'boss monsters', 'win condition', 'endboard', 'board presence', 'archetype', 'omni negate', 'omni'
 ];
 
 function detectConcept(text) {
@@ -85,8 +85,20 @@ function getConceptContext(concept) {
     return { text: 'OTK (One Turn Kill) decks aim to win in a single turn by dealing 8000+ damage.', cardsToFetch: [] };
   }
   
-  if (lower.includes('boss') || lower.includes('win condition') || lower.includes('endboard')) {
+  if (lower.includes('boss') || lower.includes('win condition')) {
     return { text: 'Boss monsters are the key win-condition cards in a deck.', cardsToFetch: [] };
+  }
+  
+  if (lower.includes('endboard') || lower.includes('end board')) {
+    return { text: 'An "endboard" refers to the state of your field at the END of your turn. When going first, you aim to establish a disruption-heavy endboard (negations, floodgates, backrow) to stop the opponent. When going second, you aim to break the opponent\'s endboard with board breakers.', cardsToFetch: [] };
+  }
+  
+  if (lower.includes('engine')) {
+    return { text: 'An "engine" refers to the core cards that enable your deck to function and generate resources consistently. Examples: searchers (cards that add other cards to hand), extenders (cards that extend your plays), and payoffs (cards that benefit from your engine). A good engine provides consistent access to your key cards.', cardsToFetch: [] };
+  }
+
+  if (lower.includes('omni') || lower.includes('omni negate')) {
+    return { text: "An omni negate (omni) is a monster effect that can negate the ACTIVATION of the opponent's cards, regardless of type (monster, spell, or trap). They are NOT the same as 'Negate Attack' which only stops an attack and ends the Battle Phase. Omni negates are typically Extra Deck monsters and are high-power endboard pieces.", cardsToFetch: []};
   }
   
   return { text: '', cardsToFetch: [] };
@@ -156,14 +168,89 @@ function detectMonsterTypeQuestion(text) {
   return null;
 }
 
-function detectArchetypeQuestion(text) {
-  if (!knowledgeBase.archetypes) return null;
-  const lower = text.toLowerCase();
-  for (const [archetype, info] of Object.entries(knowledgeBase.archetypes)) {
-    if (lower.includes(archetype.toLowerCase())) {
-      return { archetype, info };
+function findArchetypeInText(text, chatHistory = []) {
+  const allText = [text, ...chatHistory.map(h => h.content)].join(' ');
+  const words = allText.split(/\s+/);
+  const found = new Set();
+  
+  const explicitPatterns = [
+    /(?:archetype|deck|type|cards?|tell\s+me\s+about|what(?:'s| is) (?:the |this )?(?:about |of )?|about\s+the|playstyle|strategy|explain)\s+["']?(\w+(?:\s+\w+)?)["']?/gi,
+    /["'](\w+(?:\s+\w+)?)["']\s+(?:archetype|deck|type|cards|strategy)/gi,
+    /(?:boss\s+monster|playstyle|strategy)\s+(?:of|for|in)\s+["']?(\w+(?:\s+\w+)?)["']?/gi,
+  ];
+  
+  for (const pattern of explicitPatterns) {
+    let match;
+    while ((match = pattern.exec(allText)) !== null) {
+      const candidate = match[1].trim();
+      if (candidate.length >= 4) {
+        found.add(candidate);
+      }
     }
   }
+  
+  if (found.size === 0) {
+    for (const word of words) {
+      const cleaned = word.replace(/[^a-zA-Z]/g, '');
+      if (cleaned.length >= 5 && !['about', 'their', 'there', 'which', 'these', 'those', 'being'].includes(cleaned.toLowerCase())) {
+        found.add(cleaned);
+      }
+    }
+  }
+  
+  return Array.from(found);
+}
+
+async function detectArchetypeQuestion(text, chatHistory = []) {
+  const candidates = findArchetypeInText(text, chatHistory);
+  
+  if (candidates.length === 0) return null;
+  
+  const db = getDb();
+  
+  for (const candidate of candidates) {
+    const searchPattern = `%${candidate}%`;
+    
+    const archetypeResult = await db.query(
+      `SELECT archetype FROM cards WHERE archetype ILIKE $1 LIMIT 1`,
+      [searchPattern]
+    );
+    
+    if (archetypeResult.rows.length > 0) {
+      const archetypeName = archetypeResult.rows[0].archetype;
+      
+      const keyCardsResult = await db.query(
+        `SELECT name, type, atk, def, level FROM cards WHERE archetype ILIKE $1 LIMIT 8`,
+        [searchPattern]
+      );
+      
+      const yugipediaData = await getOrFetchFromYugipedia(archetypeName);
+      
+      const keyCards = keyCardsResult.rows.map(c => {
+        let info = c.name;
+        if (c.level) info += ` LV${c.level}`;
+        if (c.type?.includes('Link')) info += ` (Link-${c.atk})`;
+        else if (c.type?.includes('Xyz') || c.type?.includes('Synchro') || c.type?.includes('Fusion')) {
+          info += ` (${c.atk || '?'}/${c.def || '?'})`;
+        }
+        return info;
+      }).join(', ');
+      
+      let info = '';
+      if (yugipediaData?.playing_style) {
+        info += `Playing Style: ${yugipediaData.playing_style}\n`;
+      }
+      if (keyCards) {
+        info += `Key Cards: ${keyCards}\n`;
+      }
+      if (yugipediaData?.recommended_cards?.main?.length > 0) {
+        info += `Recommended ${archetypeName} Cards: ${yugipediaData.recommended_cards.main.slice(0, 10).join(', ')}`;
+      }
+      
+      return { archetype: archetypeName, info: info.trim() };
+    }
+  }
+  
   return null;
 }
 
@@ -231,7 +318,9 @@ Keep it balanced: 70% helpful, 30% personality.
 
 Communication Style:
 - When answering questions: Be clear and direct. Explain things step-by-step. Save the enthusiasm for calling out broken cards or crazy combos.
-- When user is being casual/social: Match their vibe, be friendly and energetic!
+- Be CONCISE—avoid repeating the same information in different words. State each point once.
+- If you've already explained something, DO NOT restate it with different wording. One explanation is enough.
+- When describing effects, combine related points rather than listing them separately
 - Skip asterisks and roleplay actions—save that energy for casual conversation only
 - Use "!" sparingly but genuinely when something is actually exciting
 - Never use emojis.
@@ -250,6 +339,10 @@ Stay focused on the user's question, but feel free to go off on fun tangents occ
 You're allowed to be a little extra—just don't derail the conversation.
 If something in the game is broken, say it. If a card is ridiculous, call it out.
 Show enthusiasm for cool plays and honest frustration for annoying mechanics.
+If the user asks about "boss monsters" or "boss cards" without naming an archetype, ask them which archetype they mean—do NOT make up or guess boss monsters.
+When asked about the boss monster of a specific archetype, use ONLY the cards listed in the provided context or archetype information. Common boss monsters are mentioned in archetype descriptions or key_cards lists. If no boss monster is explicitly listed, say "I don't have specific information about the main boss monster for this archetype."
+If the user says casual things like "thanks", "great", "cool", "nice", "ok" - respond briefly and casually. Do NOT search for cards or make up information about random words.
+Keep responses SHORT and CONCISE. 2-3 paragraphs maximum. Get to the point. If a 2-sentence answer suffices, don't write a 2-paragraph essay.
 
 IMPORTANT STRICT RULES (MUST FOLLOW):
 - NEVER make up, guess, or infer information about game rules or card effects that you are not certain about - if you don't know, say so
@@ -275,7 +368,11 @@ IMPORTANT STRICT RULES (MUST FOLLOW):
 - Remember: QUICK EFFECTS are more valuable than IGNITION EFFECTS because they can be used during either player's turn
 - Remember: Battle-related effects are rarely competitive relevant - the game is usually decided before battle phase
 - When user asks about game mechanics (Synchro Summon, XYZ Summon, Link Summon, Fusion, Ritual, Pendulum, Battle Phase, Chain, etc.), use the provided mechanic information as the source of truth - do not make up or guess rules
+- When user asks about "handtraps", ONLY list cards that are Main Deck monsters with Quick Effects that can be activated directly from the hand during the opponent's turn. Do NOT list Extra Deck monsters (S:P Little Knight) or cards that must be set first (Forbidden Droplet). Examples of handtraps: Ash Blossom, Effect Veiler, Droll & Lock Bird.
+- When user asks about "omni negates", use the provided definition: they negate CARD ACTIVATIONS (not attacks). "Negate Attack" is NOT an omni negate—it only stops an attack and ends the Battle Phase.
+- When user asks about "engine", describe it as cards that enable your deck to function (searchers, extenders, consistency cards) - NOT tokens or specific cards.
 - When user asks about game concepts (handtraps, floodgates, going first/second, meta, etc.), provide accurate information WITHOUT fetching individual card effects
+- ONLY use the definitions and examples provided in the context when explaining concepts. Do NOT invent examples or contradict the provided definition.
 - Only describe card effects using the EXACT wording from the provided card text
 - When card stats (ATK/DEF/Level/Attribute) are provided in the context, ALWAYS use those exact values
 - If you don't have the effect text for a card, say "I don't have the effect text for [card name]"
@@ -379,7 +476,7 @@ function extractCardNames(text) {
     // Skip words that are already part of a capitalized name
     if (capitalizedNameWords.has(word)) continue;
     
-    const skipWords = ['what', 'about', 'tell', 'me', 'how', 'does', 'which', 'cards', 'deck', 'good', 'best', 'top', 'meta', 'your', 'youre', 'from', 'some', 'any', 'all', 'these', 'those', 'like', 'into', 'have', 'this', 'that', 'with', 'theyre', 'theres', 'explain', 'describe', 'the', 'an', 'a'];
+    const skipWords = ['what', 'about', 'tell', 'me', 'how', 'does', 'which', 'cards', 'deck', 'good', 'best', 'top', 'meta', 'your', 'youre', 'from', 'some', 'any', 'all', 'these', 'those', 'like', 'into', 'have', 'this', 'that', 'with', 'theyre', 'theres', 'explain', 'describe', 'the', 'an', 'a', 'favorite', 'least', 'thanks', 'thank', 'welcome', 'sorry', 'sure', 'yes', 'no', 'ok', 'okay', 'cool', 'nice', 'sure'];
     if (skipWords.includes(word)) continue;
     
     const capitalized = word.charAt(0).toUpperCase() + word.slice(1);
@@ -475,7 +572,9 @@ router.post("/chat", async (req, res) => {
     const effectQualityContext = isAskingAboutEffectQuality ? getEffectQualityContext() : null;
 
     const detectedMonsterType = detectMonsterTypeQuestion(message);
-    const detectedArchetype = detectArchetypeQuestion(message);
+    
+    const isConceptQuestion = detectedConcept || detectedMechanic || isAskingAboutEffectQuality;
+    const detectedArchetype = isConceptQuestion ? null : await detectArchetypeQuestion(message, chatHistory);
 
     const conceptData = detectedConcept ? getConceptContext(detectedConcept) : { text: '', cardsToFetch: [] };
     const conceptContext = conceptData.text;
@@ -516,7 +615,7 @@ router.post("/chat", async (req, res) => {
 
     // Fallback: if no cards found, try to search the entire message for card names
     let fallbackCards = [];
-    if (validatedDbCards.length === 0) {
+    if (!isCasual && validatedDbCards.length === 0) {
       const messageWords = message.split(/\s+/);
       for (const word of messageWords) {
         const cleaned = word.replace(/[^a-zA-Z0-9]/g, '');
@@ -690,7 +789,7 @@ router.post("/chat", async (req, res) => {
     if (mechanicContext) userContent += `[Game Mechanic - ${detectedMechanic.keyword.toUpperCase()}]: ${mechanicContext.text}\n`;
     if (effectQualityContext) userContent += `[Effect Quality Ranking]: S-Tier: Game-changing (negation, board breakers). A-Tier: Strong generic effects. B-Tier: Solid but conditional. C-Tier: Situational. D-Tier: Rarely impactful. QUICK EFFECTS > IGNITION EFFECTS. Battle effects are rarely competitive relevant.\n`;
     if (detectedMonsterType) userContent += `[Monster Type - ${detectedMonsterType.type.toUpperCase()}]: ${detectedMonsterType.info}\n`;
-    if (detectedArchetype) userContent += `[Archetype - ${detectedArchetype.archetype}]: ${detectedArchetype.info}\nIMPORTANT: When archetype info is provided, use ONLY that - do NOT focus on individual card effects unless asked\n`;
+    if (detectedArchetype) userContent += `[Archetype - ${detectedArchetype.archetype}]: ${detectedArchetype.info}\nIMPORTANT: Use the key cards and recommended cards listed above to answer questions about this archetype. When asked about boss monsters, look at the key cards listed—these are typically the main monsters of the archetype.\n`;
     if (conceptContext) userContent += `[Concept Context]: ${conceptContext}\n`;
     if (conceptEffectsContext) userContent += `${conceptEffectsContext}\n`;
     if (effectsContext) userContent += `${effectsContext}\n`;
@@ -708,7 +807,7 @@ router.post("/chat", async (req, res) => {
       model: "llama-3.1-8b-instant",
       messages: messages,
       temperature: 0.7,
-      max_tokens: 1024,
+      max_tokens: 512,
     });
 
     const response = completion.choices[0]?.message?.content || "I'm sorry, I couldn't generate a response. Please try again.";

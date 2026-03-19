@@ -580,6 +580,189 @@
       },
       "type": "archetype",
       "cachedAt": "2026-03-18T03:59:27.626Z"
+    },
+    "Favorite": {
+      "name": "Favorite",
+      "playing_style": "\"Favorite\" cards support the \"HERO\" (\"Elemental HERO\" in particular) and \"Yubel\" archetypes. For \"HERO\" support, \"Favorite Hero\" is an Equip Spell Card can search Field Spell Cards and protect Level 5 or higher \"HERO\" monsters from being targeted by the opponent's card effects while a Field Spell is present and gives the equipped monster an ATK boost (equal to its DEF), and lets the equipped monster attack again in a row, while \"Favorite Contact\" is a Normal Trap Card can Summon a Fusion Monster",
+      "recommended_cards": {
+        "main": [
+          "Elemental HERO Neos"
+        ],
+        "extra": [
+          "Elemental HERO Flame Wingman - Infernal Rage",
+          "Elemental HERO Brave Neos",
+          "Elemental HERO Escuridao",
+          "Elemental HERO Flame Wingman",
+          "Elemental HERO Neos Kluger",
+          "Elemental HERO Shining Neos Wingman",
+          "Elemental HERO Sunrise",
+          "Favorite HERO Flame Wingman",
+          "Favorite HERO Shining Flare Wingman",
+          "Phantom of Yubel",
+          "Yubel - The Loving Defender Forever"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T16:12:00.450Z"
+    },
+    "Plunder Patroll": {
+      "name": "Plunder Patroll",
+      "playing_style": "The Plunder Patroll theme's playstyle revolves around summoning archetypal Extra Deck monsters for free during the opponent's turn based on the Attribute of the monsters the opponent controls or are in their GY. Currently, there are 5 boss monsters; a FIRE Synchro Monster, a DARK Xyz Monster, a LIGHT Fusion Monster, a EARTH Synchro Monster and a WATER Link Monster. By doing so, they can equip themselves to the cards and make the discard effects of \"Plunder Patrollship Brann\" and \"Plunder Patroll",
+      "recommended_cards": {
+        "main": [
+          "Bluebeard, the Plunder Patroll Shipwright",
+          "Redbeard, the Plunder Patroll Matey",
+          "Blackeyes, the Plunder Patroll Seaguide",
+          "Dipsea Fiend",
+          "Fiend Piece Golem",
+          "Goblindbergh",
+          "Tin Goldfish",
+          "Wandering King Wildwind",
+          "Xyz Slidolphin",
+          "Kaiju"
+        ],
+        "extra": [
+          "Plunder Patrollship Lys",
+          "Aerial Eater",
+          "D/D/D/D Great Dimension King Arc Crisis",
+          "Luce the Dusk&#39;s Dark",
+          "Necroquip Princess",
+          "The Duke of Demise",
+          "Mudragon of the Swamp",
+          "Instant Fusion",
+          "Karbonala Warrior",
+          "Ready Fusion",
+          "Plunder Patrollship Jord",
+          "Emblem of the Plunder Patroll",
+          "Snake-Eyes Doomed Dragon"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T16:25:34.352Z"
+    },
+    "Tenpai Dragon": {
+      "name": "Tenpai Dragon",
+      "playing_style": "\"Tenpai Dragon\" is a blind going second Deck that involves around swarming their Main Deck monsters onto the field, then repeatedly Synchro Summoning \"Sangen\" Synchro Monsters and/or \"Trident Dragion\" in the Battle Phase, attacking repeatedly with these monsters until the opponent is defeated. \"Trident Dragion\" and both \"Sangen\" Synchros have effects that can destroy your own cards, allowing you to trigger the Field Spell \"Sangen Summoning\"'s ATK doubling effect, or send \"Sangenpai Transcendent ",
+      "recommended_cards": {
+        "main": [
+          "Tenpai Dragon Fadra",
+          "Tenpai Dragon Genroku",
+          "Tenpai Dragon Paidra",
+          "Aiza the Dragoness of Deranged Devotion",
+          "Blaster, Dragon Ruler of Infernos",
+          "Burner, Dragon Ruler of Sparks",
+          "Burning Dragon",
+          "Bystial Magnamhut",
+          "Diabrocken of the Ghost Light",
+          "Dragonic Warrior",
+          "Dora Dora",
+          "Hiita the Fire Channeler",
+          "Lunalight Kaleido Chick",
+          "Masked Dragon",
+          "Poki Draco",
+          "Red-Eyes Black Fullmetal Dragon",
+          "Wattcobra"
+        ],
+        "extra": [
+          "Fighting Flame Dragon",
+          "Ultimate Flame Swordsman"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T16:42:09.655Z"
+    },
+    "Windwitch": {
+      "name": "Windwitch",
+      "playing_style": "The \"Windwitch\" monsters focus on freely swarming the field for Synchro Summons. The most important starter is \"Windwitch - Ice Bell\" which can Special Summon itself and another \"Windwitch\" monster from the deck while there are no monsters the user's field. The most important choice is to summon (though while also a potent starter itself) is the Level 4 Tuner monster \"Windwitch - Glass Bell\" which can search another \"Windwitch\" monster upon its summon. The ideal search choices are either \"Windwi",
+      "recommended_cards": {
+        "main": [
+          "Windwitch - Ice Bell",
+          "Windwitch - Freeze Bell",
+          "Elzette, Azamina of the White Forest",
+          "Ghost Fairy Elfobia",
+          "Pilica, Descendant of Gusto",
+          "Ranryu",
+          "Awakening of the Possessed - Rasenryu",
+          "Wynn the Wind Channeler",
+          "Speedroid Terrortop",
+          "Speedroid Taketomborg"
+        ],
+        "extra": [
+          "Windwitch - Crystal Bell",
+          "Alligator&#39;s Sword Dragon",
+          "Invoked Raidjin",
+          "Lyrilusc - Independent Nightingale",
+          "Magistus Chorozo",
+          "Millennium-Eyes Restrict",
+          "Possessed Resonance - Wynn",
+          "Starving Venom Wing Dragon",
+          "Supreme Arcanite Magician"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T17:41:36.438Z"
+    },
+    "Charmer": {
+      "name": "Charmer",
+      "playing_style": "\"Unpossessed\" is the key card of the Deck, preventing \"Charmer\" monsters from being destroyed by battle, which allows their Flip effects to be used properly, and Special Summoning Spellcaster monsters with 1500 DEF from the Deck, including non-members like \"Injection Fairy Lily\" or \"Windwitch - Glass Bell\".",
+      "recommended_cards": {
+        "main": [
+          "Awakening of the Possessed - Nefariouser Archfiend",
+          "Awakening of the Possessed - Gagigobyte",
+          "Awakening of the Possessed - Greater Inari Fire",
+          "Awakening of the Possessed - Rasenryu",
+          "Familiar-Possessed - Aussa",
+          "Familiar-Possessed - Dharc",
+          "Familiar-Possessed - Eria",
+          "Familiar-Possessed - Hiita",
+          "Familiar-Possessed - Wynn",
+          "Familiar-Possessed - Lyna",
+          "Familiars of the Spiritual Arts",
+          "Inari Fire",
+          "Jigabyte",
+          "Nefarious Archfiend Eater of Nefariousness",
+          "Ranryu",
+          "Aleister the Invoker",
+          "Eda the Sun Magician",
+          "Fairy Tail - Luna",
+          "Fairy Tail - Matchlille",
+          "Fairy Tail - Rella"
+        ],
+        "extra": [
+          "Charmers of the Grand Circle",
+          "Possessed Resonance - Wynn",
+          "Chronicler of Fairy Tail Tales",
+          "Denial Deity Dotan",
+          "Kamionwizard",
+          "Sanwitch",
+          "Predaplant Dragostapelia",
+          "Quintet Magician",
+          "Invoked",
+          "Weaver of Fairy Tail Tales"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T19:43:16.160Z"
+    },
+    "World Chalice": {
+      "name": "World Chalice",
+      "playing_style": "Being one of the first archetypes to focus on Link Summoning, the \"World Chalice\" archetype explores the intricacies of the newly-introduced mechanic. To that end, the archetype focuses on initiating multiple Link Summons in quick succession, all while promoting combos that extend the longevity of this style of play, namely through helping the controller amass more monsters in the hand or on the field to use as Link Materials. The archetype also encourages the controller carefully consider the p",
+      "recommended_cards": {
+        "main": [
+          "Beckoned by the World Chalice",
+          "Chosen by the World Chalice",
+          "Crowned by the World Chalice",
+          "Mystical Shine Ball"
+        ],
+        "extra": [
+          "World Chalice Guardragon Almarduke",
+          "First of the Dragonlords",
+          "First of the Dragons",
+          "Primite Dragon Nether Berzelius"
+        ]
+      },
+      "type": "archetype",
+      "cachedAt": "2026-03-18T20:43:32.794Z"
     }
   },
   "cards": {
@@ -1180,7 +1363,150 @@
       "miscellaneous": [],
       "type": "card",
       "cachedAt": "2026-03-18T03:47:54.382Z"
+    },
+    "Cyberse": {
+      "name": "Cyberse",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T16:19:18.918Z"
+    },
+    "I": {
+      "name": "I",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T16:31:17.290Z"
+    },
+    "Monster": {
+      "name": "Monster",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T16:31:19.244Z"
+    },
+    "Infernoble": {
+      "name": "Infernoble",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T16:42:49.393Z"
+    },
+    "Infernoble Arms": {
+      "name": "Infernoble Arms",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T16:43:53.629Z"
+    },
+    "Knights": {
+      "name": "Knights",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T16:43:56.147Z"
+    },
+    "Trap Monster": {
+      "name": "Trap Monster",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T16:50:05.513Z"
+    },
+    "Starter": {
+      "name": "Starter",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T16:57:21.356Z"
+    },
+    "Exchange of the Spirit": {
+      "name": "Exchange of the Spirit",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T17:08:56.015Z"
+    },
+    "Random": {
+      "name": "Random",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T17:48:17.600Z"
+    },
+    "PaniK's monsters": {
+      "name": "PaniK's monsters",
+      "effect": "",
+      "mentions": [],
+      "supports": [],
+      "archetypes": [],
+      "related_archetypes": [],
+      "actions": [],
+      "summoning": [],
+      "miscellaneous": [],
+      "type": "card",
+      "cachedAt": "2026-03-18T19:50:25.122Z"
     }
   },
-  "updatedAt": "2026-03-18T03:59:27.626Z"
+  "updatedAt": "2026-03-18T20:43:32.795Z"
 }

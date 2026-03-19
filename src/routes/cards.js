@@ -175,21 +175,22 @@ router.get("/", async (req, res) => {
     const { conditions, params } = buildWhereClause(filters, searchType);
     const whereClause = conditions.length > 0 ? `WHERE ${conditions.join(' AND ')}` : '';
     
+    const baseParamCount = params.length;
     let orderBy = 'ORDER BY name';
+    let queryParams = [...params, limit, offset];
+    
     if (filters.name) {
       const nameParam = filters.name;
       orderBy = `ORDER BY 
-        CASE WHEN name ILIKE $${params.length + 1} THEN 0 
-             WHEN name ILIKE $${params.length + 2} THEN 1 
+        CASE WHEN name ILIKE $${baseParamCount + 1} THEN 0 
+             WHEN name ILIKE $${baseParamCount + 2} THEN 1 
              ELSE 2 
         END, name`;
-      params.push(nameParam, `${nameParam}%`);
+      queryParams = [...params, nameParam, `${nameParam}%`, limit, offset];
     }
     
     const countQuery = `SELECT COUNT(*) FROM cards ${whereClause}`;
-    const dataQuery = `SELECT * FROM cards ${whereClause} ${orderBy} LIMIT $${params.length + 1} OFFSET $${params.length + 2}`;
-    
-    const queryParams = [...params, limit, offset];
+    const dataQuery = `SELECT * FROM cards ${whereClause} ${orderBy} LIMIT $${queryParams.length - 1} OFFSET $${queryParams.length}`;
     
     const [countResult, cardsResult] = await Promise.all([
       getDb().query(countQuery, params),
