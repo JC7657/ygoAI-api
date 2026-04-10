@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "serve": "node --watch src/server.js"
   },
   "keywords": [],
@@ -19,5 +19,14 @@
     "groq-sdk": "^1.1.1",
     "jsdom": "^29.0.0",
     "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/plugin-transform-json-modules": "^7.29.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.28.6",
+    "@babel/preset-env": "^7.29.2",
+    "babel-jest": "^30.3.0",
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2"
   }
 }
